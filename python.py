@@ -1,4 +1,6 @@
 from termcolor import colored
+import time
+
 board = list(range(1, 10))
 winners = ((0, 1, 2), (3, 4, 5), (6, 7, 8), (0, 3, 6), (1, 4, 7), (2, 5, 8), (0, 4, 8), (2, 4, 6))
 moves = ((1, 7, 3, 9), (5,), (2, 4, 6, 8))
@@ -84,9 +86,11 @@ while has_empty_space():
         continue
     if won:
         print(colored("You won!", "green"))
+        time.sleep(5)
         break
     elif computer_move()[1]:
         print(colored("You lose!", "yellow"))
+        time.sleep(5)
         break
 
 print_board()
