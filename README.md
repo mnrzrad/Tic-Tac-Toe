@@ -1,1 +1,1 @@
-This code is a mini-project in a python course (Sabzlearn.ir) 
+This code is a mini-project in a python course (sabzlearn.ir) 
